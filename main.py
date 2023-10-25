@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import datetime, date
 
 
 def get_birthdays_per_week(users):
@@ -6,7 +6,7 @@ def get_birthdays_per_week(users):
         return {}
 
     # Current date
-    current_date = datetime(2023, 12, 26).date()
+    current_date = date.today()
 
     # Weekday map for converting integer to day name
     weekday_map = {
